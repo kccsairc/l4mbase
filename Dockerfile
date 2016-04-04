@@ -8,6 +8,10 @@ RUN apt-get install -y git python-setuptools python-dev && \
     apt-get install -y apache2 libapache2-mod-wsgi mysql-server mysql-client && \
     apt-get install -y libmysqlclient-dev gfortran python-mysqldb python-pip
 
+RUN apt-add-repository ppa:mc3man/trusty-media && \
+    apt-get update && \
+    apt-get install ffmpeg
+
 RUN pip install SQLAlchemy && \
     pip install wsgilog && \
     pip install Cython==0.20 && \
