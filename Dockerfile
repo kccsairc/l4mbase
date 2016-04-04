@@ -15,4 +15,5 @@ RUN pip install SQLAlchemy && \
     pip install munkres && \
     pip install parsedatetime && \
     pip install argparse && \
-    pip install numpy
+    pip install numpy && \
+    pip install Pillow
