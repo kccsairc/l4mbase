@@ -12,7 +12,7 @@ RUN apt-get install -y software-properties-common python-software-properties
 
 RUN apt-add-repository ppa:mc3man/trusty-media && \
     apt-get update && \
-    apt-get install ffmpeg
+    apt-get install -y ffmpeg
 
 RUN pip install SQLAlchemy && \
     pip install wsgilog && \
