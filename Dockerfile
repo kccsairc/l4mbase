@@ -8,7 +8,7 @@ RUN apt-get install -y git python-setuptools python-dev && \
     apt-get install -y apache2 libapache2-mod-wsgi mysql-server mysql-client && \
     apt-get install -y libmysqlclient-dev gfortran python-mysqldb python-pip
 
-RUN apt-get install software-properties-common python-software-properties
+RUN apt-get install -y software-properties-common python-software-properties
 
 RUN apt-add-repository ppa:mc3man/trusty-media && \
     apt-get update && \
